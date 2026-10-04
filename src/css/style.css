@@ -55,9 +55,19 @@ svg {
   max-width: 100%;
 }
 
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  /*outline: 1px solid red; */
+}
+
 /* FAIXA */
 .faixa {
   background-color: var(--light-slate-color);
+  font-size: 0.9em;
 }
 
 .faixa-child {
@@ -68,7 +78,7 @@ svg {
 }
 
 .faixa .container {
-  padding: 0.6rem 2rem;
+  padding: 0.7em 2em;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -100,7 +110,7 @@ svg {
 
 /* PESQUISA */
 .pesquisa {
-  padding: 0.7rem;
+  padding-block: 0.85em;
 }
 
 .pesquisa .container {
@@ -118,7 +128,7 @@ svg {
 
 .search-input {
   outline: 1.5px solid var(--gray-color);
-  border-radius: 10rem;
+  border-radius: 10em;
   width: 100%;
   max-width: 40rem;
   display: flex;
@@ -184,13 +194,13 @@ svg {
   border: 0.1em solid var(--blue-color);
   transform: scale(0.985);
   background-color: var(--white-blue-color);
-  
 }
 
 /* NAVEGAÇÃO */
 .navegacao {
+  font-size: 0.95em;
   background-color: var(--blue-color);
-  padding: 0.6rem 0;
+  padding: 0.55em 0;
 }
 
 .nav-child {
@@ -204,7 +214,7 @@ svg {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 0.5rem 2rem;
+  padding: 0.5em 2em;
 }
 
 .nav-menu li {
@@ -219,7 +229,7 @@ svg {
 }
 
 .nav-menu li:hover {
-  color: var(--white-color);
+  color: var(--white-blue-color);
 }
 
 .nav-menu i:not(.fa-bars) {
@@ -235,17 +245,70 @@ svg {
   transition: color 0.2s ease-in-out;
 }
 
-.main {
-  padding: 2rem 0;
+/* CARROUSSEL */
+.carroussel {
+  width: 100%;
+  height: 24.5rem;
+  background-color: var(--white-blue-color);
+
+  /* texto do carrousel */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blue-color);
 }
 
-.container {
-  max-width: 1536px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  /*outline: 1px solid red; */
+.main {
+  padding: 2em 0;
+}
+
+/* ACESSO RAPIDO */
+.acesso-rapido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-block: 2rem;
+}
+
+.acesso-rapido .card {
+  width: 8rem;
+  height: 10rem;
+  outline: 1px solid red;
+}
+
+/* PRODUTOS */
+.produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.produto h1 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--dark-gray-color);
+}
+
+.produto .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.produto .card {
+  padding: 0.5em 1em;
+  outline: 1px solid var(--light-gray-color);
+  border-radius: 1em;
+  box-shadow: rgb(8, 11, 22, 0.2) 0px 4px 15px 0px;
+}
+
+.produto .card img {
+  width: 100%;
+  height: 10rem;
+  outline: 1px solid red;
 }
 
 /* 2xl */
@@ -267,7 +330,6 @@ svg {
   .container {
     max-width: 768px;
   }
-
 }
 
 /* md */
@@ -290,8 +352,6 @@ svg {
     width: 100%;
   }
 }
-
-
 
 /* Easter Egg */
 .funny {
