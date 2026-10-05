@@ -36,7 +36,7 @@
 
       <div class="pesquisa">
         <div class="container">
-          <img src="src/images/LogoAzul.png" alt="Logo da SCAN" />
+          <img src="src/images/LogoAzul.png" class="" alt="Logo da SCAN" />
 
           <div class="search-input">
             <input type="text" placeholder="Procurar Produto..." />
@@ -49,7 +49,7 @@
           </div>
 
           <div class="carrinho">
-            <button class="button-solid">
+            <button class="button-solid glow">
               <i class="fa-solid fa-cart-shopping"></i>Carrinho
             </button>
           </div>
@@ -73,69 +73,120 @@
       </nav>
     </header>
 
-    <div class="carroussel">Carroussel</div>
+    <div class="carroussel" aria-label="Banner principal">
+      <img
+        src="src/images/carrossel.png"
+        alt="Banner principal da SCAN">
+    </div>
 
     <main class="main container">
       <div class="acesso-rapido">
         <div class="card">
-          <img src="" alt="" />
+          <img src="src/images/quick-actions/balcoes.png" alt="Balcões" />
         </div>
 
         <div class="card">
-          <img src="" alt="" />
+          <img
+            src="src/images/quick-actions/termos.png"
+            alt="Termos de uso e garantia"
+          />
         </div>
 
         <div class="card">
-          <img src="" alt="" />
+          <img src="src/images/quick-actions/tutoriais.png" alt="Tutoriais" />
         </div>
 
         <div class="card">
-          <img src="" alt="" />
+          <img src="src/images/quick-actions/instagram.png" alt="Instagram" />
         </div>
 
         <div class="card">
-          <img src="" alt="" />
+          <img src="src/images/quick-actions/youtube.png" alt="YouTube" />
         </div>
       </div>
 
       <div class="produto">
         <h1>Ofertas Especiais</h1>
-        <div class="cards">
+        <div class="produto-slider">
+          <button
+            class="slider-button"
+            type="button"
+            aria-label="Oferta anterior"
+          >
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
 
-          <div class="card">
-            <img src="src/images/products/produto1.png" alt="Produto 1" />
-            <h2>Adesivo Recortado</h2>
-            <span>(Impresão Solvente)</span>
+          <div class="cards">
+            <article class="card">
+              <img src="src/images/products/produto1.png" alt="Produto 1" />
+              <h2>Adesivo Recortado</h2>
+              <span>(Impressão Solvente)</span>
 
-            <div>
-              <p>Largura de Grade Variada 4x0</p>
-              <p>Meio Corte</p>
-            </div>
+              <div>
+                <p>Largura de Grade Variada 4x0</p>
+                <p>Meio Corte</p>
+              </div>
 
-            <b>Produção: 3 dias úteis</b>
-            <p>Realize o <span>login</span> para visualizar o preço</p>
+              <b>Produção: 3 dias úteis</b>
+              <p>
+                Realize o <a href="#login">Login</a> para visualizar o preço
+              </p>
+            </article>
+
+            <article class="card">
+              <img src="src/images/products/produto1.png" alt="Impressão DTF" />
+              <h2>Impressão DTF</h2>
+              <span>(Impressão UV)</span>
+              <div><p>29x42 com verniz</p></div>
+              <b>Produção: 1 dia útil</b>
+              <p>
+                Realize o <a href="#login">Login</a> para visualizar o preço
+              </p>
+            </article>
+
+            <article class="card">
+              <img src="src/images/products/produto1.png" alt="Acrílico 2mm" />
+              <h2>Acrílico 2mm</h2>
+              <span>(Impressão UV)</span>
+              <div>
+                <p>99cm de Largura</p>
+                <p>Sem acabamento</p>
+              </div>
+              <b>Produção: 2 dias úteis</b>
+              <p>
+                Realize o <a href="#login">Login</a> para visualizar o preço
+              </p>
+            </article>
+
+            <article class="card card-highlight">
+              <div class="badge"><i class="fa-solid fa-star"></i> Novo!</div>
+              <img
+                src="src/images/products/produto1.png"
+                alt="Tecido Back filme luminoso"
+              />
+              <h2>Tecido Back filme Luminoso</h2>
+              <span>(Impressão UV)</span>
+              <div>
+                <p>148cm Largura</p>
+                <p>4x0</p>
+                <p>Tecido fosco sem acabamento</p>
+              </div>
+              <b>Produção: 1 dia útil</b>
+              <p>
+                Realize o <a href="#login">Login</a> para visualizar o preço
+              </p>
+            </article>
           </div>
 
-          <div class="card">
-            <img src="src/images/produto1.jpg" alt="Produto 1" />
-            <h2>Produto 1</h2>
-            <p>Descrição do Produto 1</p>
-          </div>
-
-          <div class="card">
-            <img src="src/images/produto1.jpg" alt="Produto 1" />
-            <h2>Produto 1</h2>
-            <p>Descrição do Produto 1</p>
-          </div>
-
-          <div class="card">
-            <img src="src/images/produto1.jpg" alt="Produto 1" />
-            <h2>Produto 1</h2>
-            <p>Descrição do Produto 1</p>
-          </div>
+          <button
+            class="slider-button"
+            type="button"
+            aria-label="Próxima oferta"
+          >
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
         </div>
       </div>
-      <h1 class="">Bem-vindo(a) à SCAN!</h1>
     </main>
   </body>
 </html>
