@@ -522,6 +522,7 @@ svg {
 
 .pulse:hover {
   animation: pulse 1s ease-in-out infinite;
+  cursor: pointer;
 }
 
 @keyframes pulse {
