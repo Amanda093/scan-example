@@ -258,11 +258,13 @@ svg {
 
 /* CARROUSSEL */
 .carroussel {
-  width: 100%;
   height: 24.5rem;
-  image-rendering: pixelated;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  object-fit: fill;
+  background: linear-gradient(90deg, #2F69BC 0%, #3D9BDF 100%);
 }
 
 .main {
@@ -434,6 +436,13 @@ svg {
   background: var(--blue-color);
   color: var(--white-color);
   font-weight: 700;
+}
+
+.banner {
+  width: 100%;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
 }
 
 @media (max-width: 1100px) {
