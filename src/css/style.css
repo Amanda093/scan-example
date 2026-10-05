@@ -149,7 +149,10 @@ svg {
   color: var(--gray-color);
   border-left: 1.5px solid var(--gray-color);
   border-radius: 0 10rem 10rem 0;
-  transition: color 0.1s ease-in-out, background-color 0.2s ease-in-out, border-left 0.2s ease-in-out;
+  transition:
+    color 0.1s ease-in-out,
+    background-color 0.2s ease-in-out,
+    border-left 0.2s ease-in-out;
 }
 
 .search-input button:active {
@@ -278,7 +281,6 @@ svg {
   justify-content: space-between;
   gap: 2rem;
   margin-bottom: 1rem;
-  
 }
 @keyframes popup {
   0% {
@@ -303,7 +305,6 @@ svg {
 }
 .acesso-rapido .card:hover {
   transform: translateY(-4px);
-  
 }
 
 .acesso-rapido img {
@@ -336,8 +337,9 @@ svg {
   display: flex;
   gap: 1.35rem;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   flex: 1;
+  min-width: 0;
 }
 
 .slider-button {
@@ -345,10 +347,12 @@ svg {
   height: 2.25rem;
   flex: 0 0 2.25rem;
   border-radius: 50%;
-  background: #f0f0f0;
-  color: #3f3f3f;
+  background: var(--light-gray-color);
+  color: var(--text-gray-color);
   cursor: pointer;
-  transition: background 180ms ease, color 180ms ease;
+  transition:
+    background 180ms ease,
+    color 180ms ease;
 }
 
 .slider-button:hover {
@@ -359,11 +363,12 @@ svg {
 .produto .card {
   position: relative;
   width: calc((100% - 4.05rem) / 4);
-  min-height: 28.1rem;
-  padding: 0.75rem 0.8rem 0.8rem;
+  min-width: 0;
+  min-height: 28.5rem;
+  padding: 0.75rem 1rem 2rem;
   display: flex;
   flex-direction: column;
-  border: 1px solid #dedede;
+  border: 1px solid var(--light-gray-color);
   border-radius: 0.7rem;
   box-shadow: 0 4px 12px rgb(8 11 22 / 12%);
   overflow: hidden;
@@ -374,42 +379,41 @@ svg {
   height: 13rem;
   object-fit: cover;
   border-radius: 0.35rem;
-  background: #f4f5f5;
-  transition: transform 220ms ease-in-out;
+  background: var(--light-gray-color);
+  transition: transform 0.2s ease-in-out;
 }
 
 .produto .card:hover img {
-  overflow: hidden;
-  transform: scale(1.11);
+  transform: scale(1.06);
 }
 
 .produto .card h2 {
-  margin-top: 0.8rem;
+  margin-top: 1.5rem;
+  font-weight: 600;
   color: var(--dark-gray-color);
-  line-height: 1.15;
+}
+
+.produto .card > div:not(.badge) {
+  min-height: 3.55rem;
+  margin-top: 0.25rem;
+}
+
+.produto .card > div:not(.badge) p {
+  margin-top: 0;
 }
 
 .produto .card span {
+  margin-top: 1rem;
   color: var(--blue-color);
-}
-
-.produto .card div:not(.badge) {
-  min-height: 3.55rem;
-  margin-top: 0.25rem;
-  font-size: 0.88rem;
-  line-height: 1.2;
 }
 
 .produto .card p {
   margin-top: 0.8rem;
-  color: #4a4a4a;
-  font-size: 0.82rem;
-  line-height: 1.25;
+  color: var(--text-gray-color);
 }
 
 .produto .card b {
   margin-top: auto;
-  font-size: 0.82rem;
 }
 
 .produto .card a {
@@ -426,9 +430,9 @@ svg {
   min-height: 1.7rem;
   padding: 0.15rem 0.65rem;
   border-radius: 0 0.75rem 0.75rem 0;
-  background: #0878d1;
+  
+  background: var(--blue-color);
   color: var(--white-color);
-  font-size: 0.83rem;
   font-weight: 700;
 }
 
@@ -553,7 +557,6 @@ svg {
   100% {
     transform: rotateY(360deg);
   }
-
 }
 
 /* Easter Egg */
